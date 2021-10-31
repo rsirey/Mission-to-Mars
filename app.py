@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_pymongo import PyMongo
+from webdriver_manager.chrome import ChromeDriverManager
 import scraping
 
 app = Flask(__name__)
@@ -22,7 +23,7 @@ def scrape():
 
 
 mars.update({}, mars_data, upsert=True)
-return redirect('/', code=302)
+#return redirect('/', code=302)
 
 
 
