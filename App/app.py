@@ -22,7 +22,7 @@ def scrape():
    return redirect('/', code=302)
 
 
-mars.update({}, mars_data, upsert=True)
+#mars.update({}, mars_data, upsert=True)
 #return redirect('/', code=302)
 
 
